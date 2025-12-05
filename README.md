@@ -49,14 +49,22 @@ CREATE TABLE aggregated_transactions (
 update the RDS MySQL table
 1.	Set up AWS Glue: 
 •	First make sure glue has all necessary IAM permissions
+<img width="975" height="418" alt="image" src="https://github.com/user-attachments/assets/cef373c5-98c1-42e1-9b7d-6e90f38d9865" />
+
  
-2.	Go to Glue → Create Crawler (point to S3 bucket).
-3.	Let it create a Glue Data Catalog table.
+3.	Go to Glue → Create Crawler (point to S3 bucket).
+4.	Let it create a Glue Data Catalog table.
+5.	<img width="975" height="422" alt="image" src="https://github.com/user-attachments/assets/417ca551-3cf0-4c3c-80aa-8d302bad4afc" />
+<img width="975" height="247" alt="image" src="https://github.com/user-attachments/assets/6be22ca7-eed5-4da0-a2be-fc3f2e818342" />
+
+
 
  
 
  
 Data Catalog showing schema from glue crawler
+<img width="975" height="455" alt="image" src="https://github.com/user-attachments/assets/f6fac8bf-2954-4e1c-adca-16042ab175c3" />
+
  
 ## Step 4: Create a Glue Connection to RDS:
 1.	Go to Glue → Connections → Add connection.
@@ -66,7 +74,12 @@ Data Catalog showing schema from glue crawler
 ## Step 5: Create a Glue Job to aggregate data from S3 and push to RDS
 
 
- 
+ <img width="975" height="534" alt="image" src="https://github.com/user-attachments/assets/fb33dfda-873e-4ec6-8c17-6bd99e1eb455" />
+ <img width="975" height="557" alt="image" src="https://github.com/user-attachments/assets/9605464f-418e-418e-8f91-38fd641374d7" />
+ <img width="975" height="544" alt="image" src="https://github.com/user-attachments/assets/9cb6d541-54df-4e19-87b2-f888530c52ee" />
+
+
+
 
  
  
